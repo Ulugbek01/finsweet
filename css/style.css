@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+/* CSS varibles */
+:root {
+    /* Text colors*/
+    --primary-text: #1D2130;
+    --secondary-text: #525560;
+
+    /* Text hover */
+    --nav-hover-text: #0B0706;
+
+    /* Button text colors */
+    --primary-button-text: #fff;
+    --secondary-button-text: #1D2130;
+
+    /* Button bg colors */
+    --nav-button-bg: #1D2130;
+    --primary-button-bg: #70C174;
+    --secondary-button-bg: #fff;
+
+    /* Border radius */
+    --btn-border-radius: 4px;
+    --image-border-radius: 12px;
+}
+
+/* Core styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text);
+    position: relative;
+}
+
+.section-title .introdaction {
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-title .line {
+    width: 72px;
+    height: 2px;
+    background-color: var(--primary-text);
+    margin-right: 24px;
+    position: absolute;
+    left: -96px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--primary-text);
+}
+
+.section-text {
+    color: var(--secondary-text);
+    line-height: 26px;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 32px;
+    border-radius: var(--btn-border-radius);
+    background-color: var(--nav-button-bg);
+    color: var(--primary-button-text);
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.link-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--primary-text);
+    backdrop-filter: blur(80px);
+}
+
+.section-btn {
+    display: inline-block;
+    background-color: var(--primary-button-bg);
+    color: #fff;
+    backdrop-filter: blur(80px);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  Header styles*/
+.main-header {
+    padding: 12px 0;
+}
+
+.main-header .container{
+    display: flex;
+    align-items: center;
+}
+
+.main-navigation {
+    margin-left: auto;
+}
+
+.main-navigation__items {
+    display: flex;
+}
+
+.main-navigation__items li {
+    margin-right: 40px;
+}
+
+.main-navigation__items a {
+    color: var(--secondary-text);
+    font-weight: 500;
+}
+
+.main-navigation__items a:hover {
+    color: var(--nav-hover-text);
+}
+
+/* Hero styles */
+.hero {
+    background: url('../assets/images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 128px 0 64px;
+}
+
+.hero-title {
+    max-width: 640px;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 56px;
+}
+
+.hero-intro .hero-more {
+    padding: 48px 0 192px;
+}
+
+.hero-intro .play-video {
+    margin-left: 24px;
+    color: #fff;
+}
+
+.hero-intro .icon-wrapper {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 8px;
+}
+
+.hero-statistics {
+    display: flex;
+    align-items: center;
+}
+
+.hero-statistics .line {
+    flex: 1;
+    border: 1px solid #E5E5E5;
+    margin: 0 24px;
+}
+
+/* About styles */
+.about {
+    padding-top: 64px;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+}
+
+.about .about-info {
+    padding: 0 96px;
+}
+
+.about-info .title {
+    margin: 32px 0;
+}
+
+.about .button {
+    margin-top: 48px;
+}
+
+.about-image {
+    width: 100%;
+    height: 580px;
+    background: url('../assets/images/about.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: var(--image-border-radius);
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
