@@ -404,3 +404,105 @@ a {
     content: '';
     opacity: 0;
 }
+
+/* Charts styles */
+.chart {
+    background-color: #0B0706;
+    padding: 142px 0;
+}
+
+.chart .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart .chart-info {
+    max-width: 610px;
+    color: #fff;
+}
+
+.chart-title {
+    color: #fff;
+}
+
+.chart .introdaction {
+    opacity: 0.6;
+    margin: 16px 0 32px;
+}
+
+.chart-pieces {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chart-piece {
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.chart-piece span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: var(--btn-border-radius);
+}
+
+.chart-piece .tree {
+    background: #BEF3C0;
+}
+
+.chart-piece .program {
+    background: #AC94F1;
+}
+
+.chart-piece .people {
+    background: #FFF0CA;
+}
+
+.chart-piece .animal {
+    background: #F9CF64;
+}
+
+.chart-piece .poor {
+    background: #F38FBF;
+}
+
+.chart-image img{
+    width: 100%;
+}
+
+/* Volunteer styles*/
+.volunteer {
+    padding: 96px 0; 
+    text-align: center;
+}
+
+.volunteer .container {
+    padding: 92px 0;
+    background: url('../assets/images/environment.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.volunteer .volunteer-info {
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.volunteer-info .title {
+    color: #fff;
+}
+
+.join-volunteer {
+    display: inline-block;
+    margin: 32px 32px 0 0;
+    background-color: var(--primary-button-bg);
+}
+
+.volunteer .donate-btn {
+    background-color: #fff;
+    color: var(--primary-text);
+}
