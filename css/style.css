@@ -612,8 +612,106 @@ a {
     line-height: 56px;
     text-align: center;
 }
+
+@keyframes anim {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(6px);
+    }
+    50% {
+        transform: translateX(12px);
+    }
+    75% {
+        transform: translateX(6px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.icon-wrapper svg {
+    animation-name: anim;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 /* Footer styles */
 .footer {
     padding: 96px 0;
     background-color: #0B0706;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.footer-logo path{
+    fill: #fff;
+}
+
+.footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+}
+
+.footer-subscribe {
+    width: 40%;
+}
+
+.team li, .more li, .connect li {
+    margin-top: 24px;
+}
+
+.team a, .more a, .connect a {
+    color: #fff;
+    opacity: 0.78;
+    font-size: 14px;
+}
+
+.footer-subscribe .title {
+    color: #fff;
+    line-height: 56px;
+    font-style: 40px;
+    margin-bottom: 32px;
+}
+
+.footer-subscribe .email-wrapper {
+    display: flex;
+    height: 64px;
+    border: 1px solid rgba(235, 240, 249, 0.3);
+    border-radius: var(--btn-border-radius);
+    
+}
+
+.email-wrapper #email, .footer-subscribe .send-btn {
+    border: none;
+    outline: none;
+    border-radius: var(--btn-border-radius);
+}  
+
+.email-wrapper #email {
+    padding-left: 24px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.footer-subscribe .send-btn {
+    padding: 22px 32px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--primary-text);
+    font-family: "Roboto", sans-serif;
+}
+
+.email-wrapper input[placeholder] {
+    color: #fff;
+    opacity: 0.78;
+    font-size: 14px;
 }
