@@ -1,0 +1,21 @@
+/* About styles */
+.about {
+    padding: 96px 0;
+}
+
+.about-info {
+    display: flex;
+    margin-top: 32px;
+}
+
+.about-info__right {
+    max-width: 496px;
+    margin: 0 64px;
+}
+
+.about-info__right .header {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}

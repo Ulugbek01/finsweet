@@ -99,6 +99,15 @@ body {
     left: -96px;
 }
 
+.line-left {
+    width: 72px;
+    height: 2px;
+    background-color: #1D2130;
+    display: inline-block;
+    margin-right: 24px;
+}
+
+
 .title {
     font-weight: 700;
     font-size: 48px;
