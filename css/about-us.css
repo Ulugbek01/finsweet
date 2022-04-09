@@ -1,6 +1,10 @@
+.text-color {
+    color: #fff;
+}
+
 /* About styles */
 .about {
-    padding: 96px 0;
+    padding: 162px 0 96px;
 }
 
 .about-info {
@@ -18,4 +22,213 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
+}
+
+/* Mission styles */
+.our-mission {
+    background-color: #EFF7F2;
+}
+
+.our-mission .video-content img {
+    width: 100%;
+}
+
+.mission-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px;
+}
+
+.mission-info > div {
+    max-width: 496px;
+}
+
+
+.mission-info .subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+}
+
+.mission-info .title {
+    font-size: 28px;
+    line-height: 42px;
+    margin: 16px 0 8px;
+}
+
+/* Supports styles */
+.support {
+    background-color: #EFF7F2;
+    padding-bottom: 96px;
+}
+
+.supporter-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+/* Awards styles */
+.awards .container{
+    padding: 96px;
+}
+
+.awards .title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+.awards-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.awards-item {
+    color: #1D2130;
+    text-align: center;
+}
+
+.awards-item .year {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    margin: 16px 0 4px;
+}
+
+.awards-item .name {
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.awards-item .location {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+/* Journey styles */
+.journey .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    border-radius: 12px;
+    color: #fff;
+    padding: 64px 0 64px 96px;
+}
+
+.journey-info {
+    max-width: 488px;
+}
+
+.journey-info .intro {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+}
+
+.journey-info .title {
+    font-size: 48px;
+    line-height: 58px;
+    margin: 16px 0;
+}
+
+.journey-info .section-text {
+    color: #fff;
+    opacity: 0.6;
+    margin-bottom: 32px;
+}
+
+.journey-info .statistic-item {
+    display: flex;
+    max-width: 294px;
+    justify-content: space-between;
+}
+
+.journey-info .statistic-item .number {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.journey-info .statistic-item .number-title {
+    font-size: 12px;
+    line-height: 19px;
+    opacity: 0.6;
+}
+
+.journey-image img {
+    width: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+/* Team styles */
+.our-team {
+    padding-top: 96px;
+    text-align: center;
+}
+
+.our-team .title {
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.our-team .intro {
+    margin: 16px auto 48px;
+    opacity: 0.6;
+    line-height: 26px;
+    max-width: 520px;
+}
+
+.team-item__image img{
+    border-radius: 8px;
+}
+
+.team-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-item {
+    color: #1D2130;
+    padding-bottom: 48px;
+}
+
+.team-item .name {
+    margin: 16px 0 8px 0;font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.team-item .level {
+    font-size: 12px;
+    line-height: 19px;
+    opacity: 0.6;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.our-team__social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-team__social-networks a {
+    color: #1D2130;
+    opacity: 0.8;
+    margin-right: 20px;
+}
+
+.team-item:nth-child(5), 
+.team-item:nth-child(6),
+.team-item:nth-child(7),
+.team-item:nth-child(8) {
+    padding-bottom: 0;
 }
