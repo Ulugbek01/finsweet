@@ -453,6 +453,10 @@ a {
         font-size: 20px;
     }
 
+    .section-text {
+        line-height: 20px;
+    }
+
     .main-navigation__items {
         display: none;
     }

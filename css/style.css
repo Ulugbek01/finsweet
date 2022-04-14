@@ -318,4 +318,89 @@
     width: 100%;
 }
 
+/* Media query */
+@media only screen and (max-width: 576px){
+    .hero-title {
+        font-size: 28px;
+    }
 
+    .hero-statistics {
+        flex-direction: column;
+    }
+
+    .hero-statistics .line {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    /* About styles */
+    .about .container{
+        flex-direction: column;
+    }
+
+    .about .about-info{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Supports styles */
+    .supporter-items {
+        flex-wrap: wrap;
+    }
+
+    /* Services styles */
+    .services .container {
+        flex-direction: column;
+    }
+
+    .services .section-info {
+        padding: 0;
+    }
+
+    .services-items {
+        flex-wrap: wrap;
+    }
+
+    .services-item__top .services-item__title {
+        font-size: 20px;
+    }
+    
+    .services-item__text{
+        line-height: 20px;
+    }
+
+    .services-image {
+        width: 100%;
+    }
+
+    /* Project styles */
+    .project-cards {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-card:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    /* Charts styles*/
+    .chart {
+        padding: 20px 0;
+    }
+
+    .chart .container {
+        flex-direction: column;
+    }
+
+    .chart-title {
+        font-size: 24px;
+    }
+
+    .chart-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+}    
