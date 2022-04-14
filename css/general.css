@@ -68,6 +68,10 @@
 }
 
 /* Core styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -393,7 +397,6 @@ a {
 .footer-subscribe .title {
     color: #fff;
     line-height: 56px;
-    font-style: 40px;
     margin-bottom: 32px;
 }
 
@@ -429,4 +432,85 @@ a {
     color: #fff;
     opacity: 0.78;
     font-size: 14px;
+}
+
+/* Media query */
+@media only screen and (max-width: 576px){
+    .container {
+        width: 96%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .header-left {
+        font-size: 20px;
+    }
+
+    .main-navigation__items {
+        display: none;
+    }
+
+    /* News styles*/
+    .news-cards {
+        flex-direction: column;
+    }
+
+    .news .news-card {
+        width: 100%;
+    }
+
+    .news .news-card:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    /* Event styles */
+
+    .event-cards {
+        flex-direction: column;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+
+    .event-card:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    /* Footer styles */
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer .container > div {
+        width: 100%;
+    }
+
+    .footer .container > div:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .team li, .more li, .connect li {
+        margin-top: 8px;
+    }
+
+    .footer-subscribe .title {
+        line-height: 28px;
+    }
+
+    .footer-subscribe .email-wrapper {
+        height: 32px;
+    }
+
+    .footer-subscribe .send-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
 }
