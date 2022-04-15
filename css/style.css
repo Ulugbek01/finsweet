@@ -190,12 +190,15 @@
 }
 
 .project-card {
-    width: 32%;
     background-size: cover;
     color: #fff;
     border-radius: var(--image-border-radius);
-    padding: 80px 48px 48px;
     position: relative;
+    padding: 40px;
+}
+
+.project-card:not(:last-child){
+    margin-right: 20px;
 }
 
 .project-card__1 {
